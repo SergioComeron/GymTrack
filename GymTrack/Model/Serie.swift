@@ -13,9 +13,11 @@ class Serie: Identifiable {
     var id: UUID = UUID()  // Para poder identificarlas en una lista
     var repeticiones: Int
     var peso: Double
+    var fecha: Date?
     
-    init(repeticiones: Int, peso: Double) {
+    init(repeticiones: Int, peso: Double, fecha: Date?) {
         self.repeticiones = repeticiones
         self.peso = peso
+        self.fecha = fecha
     }
 }

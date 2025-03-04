@@ -26,7 +26,7 @@ struct RegistrarEntrenamientoView: View {
                 Button("Añadir Serie") {
                     if let reps = Int(repeticiones),
                        let kg = Double(peso) {
-                        let nuevaSerie = Serie(repeticiones: reps, peso: kg)
+                        let nuevaSerie = Serie(repeticiones: reps, peso: kg, fecha: Date())
                         series.append(nuevaSerie)
                         // Limpiar campos
                         repeticiones = ""

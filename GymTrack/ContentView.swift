@@ -13,12 +13,7 @@ struct ContentView: View {
 
     var body: some View {
         TabView {
-//            Text("GymTrack")
-            List {
-                ForEach(ejerciciosEntrenamientos) { ejercicioEntrenamiento in
-                    Text("\(ejercicioEntrenamiento.ejercicio.nombre)")
-                }
-            }
+            Home()
                 .tabItem {
                     Image(systemName: "house")
                     Text("Home")
