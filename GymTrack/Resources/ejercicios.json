@@ -1,100 +1,182 @@
 [
-    {"nombre": "Press de banca", "descripcion": "Ejercicio básico con barra", "grupoMuscular": "Pecho", "seriesDefecto": 4, "repeticionesDefecto": 10, "pesoDefecto": 20.0},
-    {"nombre": "Press inclinado", "grupoMuscular": "Pecho", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 15.0},
-    {"nombre": "Aperturas con mancuernas", "grupoMuscular": "Pecho", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 8.0},
-    {"nombre": "Pull-over con mancuerna", "grupoMuscular": "Pecho", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 15.0},
-    {"nombre": "Press declinado", "grupoMuscular": "Pecho", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 20.0},
-    {"nombre": "Fondos en paralelas", "descripcion": "Enfocado en pecho bajo", "grupoMuscular": "Pecho", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 0.0},
-    {"nombre": "Cruces en polea", "grupoMuscular": "Pecho", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 10.0},
-    {"nombre": "Press con mancuernas", "grupoMuscular": "Pecho", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 12.0},
-    {"nombre": "Peck deck", "grupoMuscular": "Pecho", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 15.0},
-    {"nombre": "Flexiones", "grupoMuscular": "Pecho", "seriesDefecto": 3, "repeticionesDefecto": 15, "pesoDefecto": 0.0},
-
-    {"nombre": "Sentadilla trasera", "descripcion": "Ejercicio rey para piernas", "grupoMuscular": "Cuádriceps", "seriesDefecto": 4, "repeticionesDefecto": 12, "pesoDefecto": 40.0},
-    {"nombre": "Prensa de piernas", "grupoMuscular": "Cuádriceps", "seriesDefecto": 4, "repeticionesDefecto": 12, "pesoDefecto": 50.0},
-    {"nombre": "Sentadilla frontal", "grupoMuscular": "Cuádriceps", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 30.0},
-    {"nombre": "Zancadas con mancuernas", "grupoMuscular": "Cuádriceps", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 10.0},
-    {"nombre": "Step-up", "grupoMuscular": "Cuádriceps", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 10.0},
-    {"nombre": "Sentadilla hack", "grupoMuscular": "Cuádriceps", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 40.0},
-    {"nombre": "Extensiones de cuádriceps", "grupoMuscular": "Cuádriceps", "seriesDefecto": 3, "repeticionesDefecto": 15, "pesoDefecto": 20.0},
-    {"nombre": "Sentadilla búlgara", "grupoMuscular": "Cuádriceps", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 10.0},
-    {"nombre": "Sissy squat", "grupoMuscular": "Cuádriceps", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 0.0},
-    {"nombre": "Saltos al cajón", "grupoMuscular": "Cuádriceps", "seriesDefecto": 3, "repeticionesDefecto": 15, "pesoDefecto": 0.0},
-
-    {"nombre": "Peso muerto", "descripcion": "Fuerza total del cuerpo", "grupoMuscular": "Espalda", "seriesDefecto": 3, "repeticionesDefecto": 8, "pesoDefecto": 50.0},
-    {"nombre": "Dominadas", "grupoMuscular": "Espalda", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 0.0},
-    {"nombre": "Remo con barra", "grupoMuscular": "Espalda", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 30.0},
-    {"nombre": "Jalón al pecho", "grupoMuscular": "Espalda", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 25.0},
-    {"nombre": "Remo con mancuerna", "grupoMuscular": "Espalda", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 15.0},
-    {"nombre": "Remo en polea baja", "grupoMuscular": "Espalda", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 20.0},
-    {"nombre": "Remo invertido", "grupoMuscular": "Espalda", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 0.0},
-    {"nombre": "Good morning", "grupoMuscular": "Espalda", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 20.0},
-    {"nombre": "Hiperextensiones", "grupoMuscular": "Espalda", "seriesDefecto": 3, "repeticionesDefecto": 15, "pesoDefecto": 0.0},
-    {"nombre": "Face pull", "descripcion": "Trabaja también hombros", "grupoMuscular": "Espalda", "seriesDefecto": 3, "repeticionesDefecto": 15, "pesoDefecto": 5.0},
-
-    {"nombre": "Press militar", "descripcion": "Ejercicio compuesto para hombros", "grupoMuscular": "Hombro", "seriesDefecto": 4, "repeticionesDefecto": 10, "pesoDefecto": 15.0},
-    {"nombre": "Elevaciones laterales", "grupoMuscular": "Hombro", "seriesDefecto": 3, "repeticionesDefecto": 15, "pesoDefecto": 5.0},
-    {"nombre": "Elevación frontal", "grupoMuscular": "Hombro", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 5.0},
-    {"nombre": "Press Arnold", "grupoMuscular": "Hombro", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 10.0},
-    {"nombre": "Remo al mentón", "grupoMuscular": "Hombro", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 10.0},
-    {"nombre": "Press en máquina", "grupoMuscular": "Hombro", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 20.0},
-    {"nombre": "Elevaciones posteriores", "grupoMuscular": "Hombro", "seriesDefecto": 3, "repeticionesDefecto": 15, "pesoDefecto": 5.0},
-    {"nombre": "Pájaros con mancuernas", "grupoMuscular": "Hombro", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 5.0},
-    {"nombre": "Press con mancuernas", "grupoMuscular": "Hombro", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 12.0},
-    {"nombre": "Rotaciones externas", "grupoMuscular": "Hombro", "seriesDefecto": 3, "repeticionesDefecto": 15, "pesoDefecto": 2.0},
-
-    {"nombre": "Peso muerto rumano", "descripcion": "Enfocado en femorales", "grupoMuscular": "Femoral", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 40.0},
-    {"nombre": "Curl femoral tumbado", "grupoMuscular": "Femoral", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 20.0},
-    {"nombre": "Curl femoral sentado", "grupoMuscular": "Femoral", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 20.0},
-    {"nombre": "Peso muerto a una pierna", "grupoMuscular": "Femoral", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 15.0},
-    {"nombre": "Puente de glúteos con barra", "grupoMuscular": "Femoral", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 20.0},
-    {"nombre": "Good morning con barra", "grupoMuscular": "Femoral", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 20.0},
-    {"nombre": "Hip thrust", "descripcion": "También trabaja glúteos", "grupoMuscular": "Femoral", "seriesDefecto": 4, "repeticionesDefecto": 12, "pesoDefecto": 30.0},
-    {"nombre": "Sentadilla sumo", "grupoMuscular": "Femoral", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 30.0},
-    {"nombre": "Patada trasera en polea", "grupoMuscular": "Femoral", "seriesDefecto": 3, "repeticionesDefecto": 15, "pesoDefecto": 10.0},
-    {"nombre": "Nordic hamstring curl", "grupoMuscular": "Femoral", "seriesDefecto": 3, "repeticionesDefecto": 8, "pesoDefecto": 0.0},
-
-    {"nombre": "Hip thrust", "descripcion": "Rey de los glúteos", "grupoMuscular": "Glúteo", "seriesDefecto": 4, "repeticionesDefecto": 12, "pesoDefecto": 20.0},
-    {"nombre": "Puente de glúteos", "grupoMuscular": "Glúteo", "seriesDefecto": 3, "repeticionesDefecto": 15, "pesoDefecto": 0.0},
-    {"nombre": "Patada de glúteos", "grupoMuscular": "Glúteo", "seriesDefecto": 3, "repeticionesDefecto": 15, "pesoDefecto": 5.0},
-    {"nombre": "Sentadilla sumo", "grupoMuscular": "Glúteo", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 30.0},
-    {"nombre": "Abducción en máquina", "grupoMuscular": "Glúteo", "seriesDefecto": 3, "repeticionesDefecto": 15, "pesoDefecto": 20.0},
-    {"nombre": "Zancadas laterales", "grupoMuscular": "Glúteo", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 10.0},
-    {"nombre": "Puente a una pierna", "grupoMuscular": "Glúteo", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 0.0},
-    {"nombre": "Clamshells", "grupoMuscular": "Glúteo", "seriesDefecto": 3, "repeticionesDefecto": 15, "pesoDefecto": 0.0},
-    {"nombre": "Fire hydrants", "grupoMuscular": "Glúteo", "seriesDefecto": 3, "repeticionesDefecto": 15, "pesoDefecto": 0.0},
-    {"nombre": "Step-up con énfasis glúteo", "grupoMuscular": "Glúteo", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 10.0},
-
-    {"nombre": "Curl de bíceps con barra", "descripcion": "Clásico para bíceps", "grupoMuscular": "Bíceps", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 10.0},
-    {"nombre": "Curl martillo", "grupoMuscular": "Bíceps", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 8.0},
-    {"nombre": "Curl con mancuernas", "grupoMuscular": "Bíceps", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 10.0},
-    {"nombre": "Curl en polea baja", "grupoMuscular": "Bíceps", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 15.0},
-    {"nombre": "Curl concentrado", "grupoMuscular": "Bíceps", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 8.0},
-    {"nombre": "Curl inclinado", "grupoMuscular": "Bíceps", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 8.0},
-    {"nombre": "Curl Zottman", "grupoMuscular": "Bíceps", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 8.0},
-    {"nombre": "Curl con barra EZ", "grupoMuscular": "Bíceps", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 12.0},
-    {"nombre": "Chin-ups", "descripcion": "Dominadas supinas", "grupoMuscular": "Bíceps", "seriesDefecto": 3, "repeticionesDefecto": 8, "pesoDefecto": 0.0},
-    {"nombre": "Curl araña", "grupoMuscular": "Bíceps", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 8.0},
-
-    {"nombre": "Extensión de tríceps en polea", "descripcion": "Aísla el tríceps", "grupoMuscular": "Tríceps", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 10.0},
-    {"nombre": "Press francés", "grupoMuscular": "Tríceps", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 10.0},
-    {"nombre": "Fondos en paralelas", "grupoMuscular": "Tríceps", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 0.0},
-    {"nombre": "Patada de tríceps", "grupoMuscular": "Tríceps", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 5.0},
-    {"nombre": "Press cerrado", "grupoMuscular": "Tríceps", "seriesDefecto": 3, "repeticionesDefecto": 10, "pesoDefecto": 20.0},
-    {"nombre": "Extensión overhead con mancuerna", "grupoMuscular": "Tríceps", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 10.0},
-    {"nombre": "Fondos en banco", "grupoMuscular": "Tríceps", "seriesDefecto": 3, "repeticionesDefecto": 15, "pesoDefecto": 0.0},
-    {"nombre": "Cuerda en polea para tríceps", "grupoMuscular": "Tríceps", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 10.0},
-    {"nombre": "Press de tríceps en máquina", "grupoMuscular": "Tríceps", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 20.0},
-    {"nombre": "Extensión unilateral en polea", "grupoMuscular": "Tríceps", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 5.0},
-
-    {"nombre": "Elevación de talones de pie", "descripcion": "Clásico para gemelos", "grupoMuscular": "Gemelo", "seriesDefecto": 4, "repeticionesDefecto": 15, "pesoDefecto": 0.0},
-    {"nombre": "Elevación de talones sentado", "grupoMuscular": "Gemelo", "seriesDefecto": 3, "repeticionesDefecto": 15, "pesoDefecto": 20.0},
-    {"nombre": "Elevación en prensa", "grupoMuscular": "Gemelo", "seriesDefecto": 3, "repeticionesDefecto": 15, "pesoDefecto": 50.0},
-    {"nombre": "Saltos con rodillas rectas", "grupoMuscular": "Gemelo", "seriesDefecto": 3, "repeticionesDefecto": 20, "pesoDefecto": 0.0},
-    {"nombre": "Elevación unilateral de talones", "grupoMuscular": "Gemelo", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 0.0},
-    {"nombre": "Elevación en máquina Smith", "grupoMuscular": "Gemelo", "seriesDefecto": 3, "repeticionesDefecto": 15, "pesoDefecto": 30.0},
-    {"nombre": "Elevación con peso en manos", "grupoMuscular": "Gemelo", "seriesDefecto": 3, "repeticionesDefecto": 12, "pesoDefecto": 10.0},
-    {"nombre": "Saltos al cajón bajos", "grupoMuscular": "Gemelo", "seriesDefecto": 3, "repeticionesDefecto": 15, "pesoDefecto": 0.0},
-    {"nombre": "Elevación de talones en escalón", "grupoMuscular": "Gemelo", "seriesDefecto": 3, "repeticionesDefecto": 15, "pesoDefecto": 0.0},
-    {"nombre": "Caminar de puntillas", "grupoMuscular": "Gemelo", "seriesDefecto": 3, "repeticionesDefecto": 1, "pesoDefecto": 0.0}
+    {
+        "nombre": "Press de banca",
+        "descripcion": "Ejercicio básico con barra",
+        "grupoMuscular": "Pecho",
+    },
+    {
+        "nombre": "Sentadilla Multipower",
+        "descripcion": "Ejercicio fundamental que trabaja los cuádriceps, glúteos y isquiotibiales. Se realiza flexionando las rodillas y bajando el cuerpo como si te sentaras en una silla imaginaria.",
+        "grupoMuscular": "Cuádriceps"
+    },
+    {
+        "nombre": "Prensa Inclinada de Piernas",
+        "descripcion": "Se realiza en una máquina de prensa de piernas, empujando un peso con las piernas desde una posición sentada.",
+        "grupoMuscular": "Cuádriceps"
+    },
+    {
+        "nombre": "Prensa Horizontal de Piernas",
+        "descripcion": "Se realiza en una máquina de prensa de piernas, empujando un peso con las piernas desde una posición sentada.",
+        "grupoMuscular": "Cuádriceps"
+    },
+    {
+        "nombre": "Extensiones de Pierna",
+        "descripcion": "Ejercicio de aislamiento para los cuádriceps, realizado en una máquina específica donde se extienden las piernas contra resistencia.",
+        "grupoMuscular": "Cuádriceps"
+    },
+    {
+        "nombre": "Zancadas",
+        "descripcion": "Ejercicio unilateral que involucra dar un paso adelante y flexionar ambas rodillas. Trabaja los cuádriceps, glúteos y isquiotibiales.",
+        "grupoMuscular": "Cuádriceps"
+    },
+    {
+        "nombre": "Abductores con máquina",
+        "descripcion": "Ejercicio realizado en una máquina específica donde se empuja las piernas hacia afuera contra resistencia, enfocándose en los abductores.",
+        "grupoMuscular": "Abductores"
+    },
+    {
+        "nombre": "Aductores con máquina",
+        "descripcion": "Ejercicio realizado en una máquina específica donde se empuja las piernas hacia adentro contra resistencia, enfocándose en los aductores.",
+        "grupoMuscular": "Aductores"
+    },
+    {
+        "nombre": "Elevaciones laterales de pierna",
+        "descripcion": "De pie o acostado de lado, se eleva una pierna lateralmente contra la gravedad o con una banda elástica para trabajar los abductores.",
+        "grupoMuscular": "Abductores"
+    },
+    {
+        "nombre": "Abducción de cadera con banda elástica",
+        "descripcion": "Con una banda alrededor de las piernas, se separan las piernas hacia los lados para fortalecer los abductores.",
+        "grupoMuscular": "Abductores"
+    },
+    {
+        "nombre": "Step-ups laterales",
+        "descripcion": "Subir a un banco o plataforma desde un lado, enfocándose en el movimiento lateral para activar los abductores.",
+        "grupoMuscular": "Abductores"
+    },
+    {
+        "nombre": "Patada lateral",
+        "descripcion": "De pie, se realiza una patada controlada hacia el lado para trabajar los abductores y mejorar la estabilidad.",
+        "grupoMuscular": "Abductores"
+    },
+    {
+        "nombre": "Zancadas laterales",
+        "descripcion": "Dar un paso amplio hacia un lado y flexionar la rodilla, regresando a la posición inicial, para trabajar los aductores y abductores.",
+        "grupoMuscular": "Aductores"
+    },
+    {
+        "nombre": "Elevación de talones de pie",
+        "descripcion": "De pie, con los pies separados al ancho de los hombros, elevar los talones del suelo y bajar lentamente para trabajar los gemelos.",
+        "grupoMuscular": "Gemelos"
+    },
+    {
+        "nombre": "Elevación de talones sentado",
+        "descripcion": "Sentado en una máquina o con peso sobre las rodillas, elevar los talones para enfocar el trabajo en el sóleo, parte de los gemelos.",
+        "grupoMuscular": "Gemelos"
+    },
+    {
+        "nombre": "Elevación de talones en prensa de piernas",
+        "descripcion": "En una máquina de prensa de piernas, colocar los pies en la parte inferior de la plataforma y empujar con los dedos para trabajar los gemelos.",
+        "grupoMuscular": "Gemelos"
+    },
+    {
+        "nombre": "Elevación de talones en escalón",
+        "descripcion": "De pie en un escalón o plataforma, dejar los talones colgando y elevarlos por encima del nivel para un rango completo de movimiento.",
+        "grupoMuscular": "Gemelos"
+    },
+    {
+        "nombre": "Elevación de talones con mancuernas",
+        "descripcion": "Sosteniendo mancuernas en las manos, realizar elevaciones de talones para añadir resistencia y trabajar los gemelos.",
+        "grupoMuscular": "Gemelos"
+    },
+    {
+        "nombre": "Elevación de talones unilateral",
+        "descripcion": "Realizar elevaciones de talones con una sola pierna para mejorar el equilibrio y trabajar cada gemelo de forma aislada.",
+        "grupoMuscular": "Gemelos"
+    },
+    {
+        "nombre": "Sentadilla búlgara multipower",
+        "descripcion": "Apoyar un pie en un banco y usar la multipower para mayor estabilidad.",
+        "grupoMuscular": "Cuádriceps"
+    },
+    {
+        "nombre": "Sentadilla búlgara mancuerna",
+        "descripcion": "Sostener una mancuerna en cada mano, mantener el torso recto.",
+        "grupoMuscular": "Cuádriceps"
+    },
+    {
+        "nombre": "Sentadilla hack",
+        "descripcion": "Realizar en máquina hack, ajustar el peso según nivel.",
+        "grupoMuscular": "Cuádriceps"
+    },
+    {
+        "nombre": "Dominadas agarre pronado",
+        "descripcion": "Agarre con palmas hacia fuera, enfatiza dorsales y fuerza general.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Pullover con mancuerna",
+        "descripcion": "Acostado en banco, bajar la mancuerna detrás de la cabeza.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Peso muerto",
+        "descripcion": "Ejercicio compuesto, dorsales actúan como estabilizadores.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Remo con barra",
+        "descripcion": "Mantener espalda recta, llevar barra al abdomen para activar dorsales.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Remo con barra agarre supino",
+        "descripcion": "Palmas hacia arriba, mayor implicación de bíceps junto a dorsales.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Remo en polea baja agarre ancho",
+        "descripcion": "Usar barra larga en polea, enfocarse en dorsales externos.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Remo en polea baja agarre estrecho",
+        "descripcion": "Agarre en V, activar dorsales centrales y bíceps.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Remo con mancuerna a una mano",
+        "descripcion": "Apoyar una rodilla en un banco, tirar hacia el torso.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Remo Pendlay",
+        "descripcion": "Desde el suelo en cada repetición, explosivo y con espalda paralela al suelo.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Remo con TRX",
+        "descripcion": "Ajustar ángulo del cuerpo para variar dificultad, usar peso corporal.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Remo en máquina Smith",
+        "descripcion": "Ajustar barra en máquina Smith, mantener trayectoria fija.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Remo en máquina de remo asistido",
+        "descripcion": "Máquina con agarres, ideal para principiantes o control de peso.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Pulldown en máquina de dorsales",
+        "descripcion": "Similar al jalón, usar barra o agarres en máquina específica.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Remo en máquina Hammer Strength",
+        "descripcion": "Máquina de placas, permite trabajo unilateral o bilateral.",
+        "grupoMuscular": "Dorsal"
+    }
 ]
