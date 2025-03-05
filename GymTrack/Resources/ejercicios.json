@@ -213,5 +213,70 @@
         "nombre": "Jalón en máquina de dorsales",
         "descripcion": "Similar al jalón en polea, usar una máquina específica con barra o agarres ajustables.",
         "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Hiperextensión en banco",
+        "descripcion": "Acostado boca abajo en un banco de hiperextensión, elevar el torso para fortalecer lumbares.",
+        "grupoMuscular": "Lumbar"
+    },
+    {
+        "nombre": "Good morning",
+        "descripcion": "Con una barra en los hombros, flexionar el torso hacia adelante manteniendo la espalda recta, enfocándose en lumbares.",
+        "grupoMuscular": "Lumbar"
+    },
+    {
+        "nombre": "Superman",
+        "descripcion": "Acostado boca abajo, elevar simultáneamente brazos y piernas para activar los músculos lumbares.",
+        "grupoMuscular": "Lumbar"
+    },
+    {
+        "nombre": "Peso muerto rumano",
+        "descripcion": "Variación del peso muerto con mayor énfasis en lumbares y glúteos, bajando la barra solo hasta las rodillas.",
+        "grupoMuscular": "Lumbar"
+    },
+    {
+        "nombre": "Extensión lumbar en máquina",
+        "descripcion": "Usar una máquina específica para flexionar y extender la espalda baja, aislando los lumbares.",
+        "grupoMuscular": "Lumbar"
+    },
+    {
+        "nombre": "Puente de glúteos",
+        "descripcion": "Acostado boca arriba, elevar las caderas con las rodillas dobladas, activando lumbares y glúteos.",
+        "grupoMuscular": "Lumbar"
+    },
+    }
+    "nombre": "Remo en punta con barra libre",
+    "descripcion": "Apoyar una barra en una esquina o soporte, cargarla con discos y tirar desde una posición inclinada con agarre neutro o pronado.",
+    "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Remo en punta con máquina T-bar",
+        "descripcion": "Usar una máquina específica de T-bar con soporte para el pecho, ajustar el peso y tirar con agarre estrecho o ancho.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Remo en punta con mancuerna",
+        "descripcion": "Inclinarse hacia adelante con una mancuerna en una mano, apoyar la otra en un banco y tirar hacia el torso.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Remo en punta en máquina Smith",
+        "descripcion": "Ajustar la barra en una máquina Smith a una altura baja, inclinarse y tirar manteniendo la trayectoria fija.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Remo en punta con barra hexagonal",
+        "descripcion": "Usar una barra hexagonal (trap bar), pararse dentro y tirar desde una posición inclinada, variando el agarre.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Remo en punta con polea baja",
+        "descripcion": "Sentado en una polea baja con un accesorio en V o barra corta, inclinarse hacia adelante y tirar hacia el abdomen.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Remo en punta con kettlebell",
+        "descripcion": "Inclinarse con una kettlebell en una mano, estabilizar con la otra en un soporte y tirar hacia el torso.",
+        "grupoMuscular": "Dorsal"
     }
 ]
