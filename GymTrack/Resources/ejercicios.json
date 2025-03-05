@@ -278,5 +278,146 @@
         "nombre": "Remo en punta con kettlebell",
         "descripcion": "Inclinarse con una kettlebell en una mano, estabilizar con la otra en un soporte y tirar hacia el torso.",
         "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Press militar con barra",
+        "descripcion": "Sentado o de pie, levantar una barra desde el pecho hasta por encima de la cabeza para trabajar los deltoides.",
+        "grupoMuscular": "Hombro"
+    },
+    {
+        "nombre": "Press de hombros con mancuernas",
+        "descripcion": "Sentado o de pie, levantar mancuernas desde los hombros hasta extender los brazos, enfocándose en los deltoides.",
+        "grupoMuscular": "Hombro"
+    },
+    {
+        "nombre": "Elevaciones laterales con mancuernas",
+        "descripcion": "De pie, elevar mancuernas a los lados hasta la altura de los hombros para aislar el deltoides lateral.",
+        "grupoMuscular": "Hombro"
+    },
+    {
+        "nombre": "Elevaciones frontales con mancuernas",
+        "descripcion": "De pie, levantar mancuernas al frente hasta la altura de los hombros para trabajar el deltoides anterior.",
+        "grupoMuscular": "Hombro"
+    },
+    {
+        "nombre": "Press en máquina de hombros",
+        "descripcion": "Usar una máquina específica de press de hombros, ajustar el peso y empujar hacia arriba para trabajar los deltoides.",
+        "grupoMuscular": "Hombro"
+    },
+    {
+        "nombre": "Remo al mentón con barra",
+        "descripcion": "Levantar una barra desde la cintura hasta el mentón con los codos hacia afuera, enfocándose en deltoides y trapecios.",
+        "grupoMuscular": "Hombro"
+    },
+    {
+        "nombre": "Elevaciones posteriores con mancuernas",
+        "descripcion": "Inclinarse hacia adelante y elevar mancuernas hacia atrás para aislar el deltoides posterior.",
+        "grupoMuscular": "Hombro"
+    },
+    {
+        "nombre": "Face pull en polea",
+        "descripcion": "Usar una polea con cuerda, tirar hacia la cara con los codos abiertos para trabajar deltoides posteriores y trapecios.",
+        "grupoMuscular": "Hombro"
+    },
+    {
+        "nombre": "Press Arnold",
+        "descripcion": "Con mancuernas, comenzar con palmas hacia adentro y girar al subir hasta extender los brazos, trabajando todo el hombro.",
+        "grupoMuscular": "Hombro"
+    },
+    {
+        "nombre": "Elevaciones laterales con mancuernas",
+        "descripcion": "De pie, elevar mancuernas a los lados hasta la altura de los hombros para aislar el deltoides lateral.",
+        "grupoMuscular": "Hombro"
+    },
+    {
+        "nombre": "Elevaciones laterales en polea baja",
+        "descripcion": "Usar una polea baja con un agarre por mano, elevar los brazos a los lados hasta la altura de los hombros.",
+        "grupoMuscular": "Hombro"
+    },
+    {
+        "nombre": "Elevaciones laterales con banda elástica",
+        "descripcion": "Pisar una banda elástica y elevar los brazos a los lados contra la resistencia para trabajar los deltoides laterales.",
+        "grupoMuscular": "Hombro"
+    },
+    {
+        "nombre": "Elevaciones laterales en máquina",
+        "descripcion": "Sentado en una máquina de hombros lateral, empujar los brazos hacia afuera para aislar los deltoides laterales.",
+        "grupoMuscular": "Hombro"
+    },
+    {
+        "nombre": "Elevaciones laterales con kettlebell",
+        "descripcion": "De pie, sostener una kettlebell en cada mano y elevarlas a los lados hasta la altura de los hombros.",
+        "grupoMuscular": "Hombro"
+    },
+    {
+        "nombre": "Elevaciones laterales inclinadas con mancuernas",
+        "descripcion": "Inclinarse ligeramente hacia adelante y elevar mancuernas a los lados, enfocándose en los deltoides laterales.",
+        "grupoMuscular": "Hombro"
+    },
+    {
+        "nombre": "Abducciones laterales con disco",
+        "descripcion": "Sostener un disco con ambas manos y elevarlo a un lado hasta la altura del hombro, trabajando el deltoides lateral.",
+        "grupoMuscular": "Hombro"
+    },
+    {
+        "nombre": "Crunch en suelo",
+        "descripcion": "Acostado boca arriba con rodillas dobladas, elevar el torso hacia las rodillas para trabajar los rectos abdominales.",
+        "grupoMuscular": "Abdominales"
+    },
+    {
+        "nombre": "Plancha",
+        "descripcion": "Mantener el cuerpo en posición horizontal apoyado en antebrazos y puntas de los pies, activando el core.",
+        "grupoMuscular": "Abdominales"
+    },
+    {
+        "nombre": "Elevaciones de piernas colgado",
+        "descripcion": "Colgado de una barra, elevar las piernas rectas o dobladas para trabajar los abdominales inferiores.",
+        "grupoMuscular": "Abdominales"
+    },
+    {
+        "nombre": "Russian twist con peso",
+        "descripcion": "Sentado con las piernas elevadas, girar el torso con un peso (mancuerna o disco) para trabajar oblicuos.",
+        "grupoMuscular": "Abdominales"
+    },
+    {
+        "nombre": "Abdominales en máquina",
+        "descripcion": "Usar una máquina de abdominales, ajustar el peso y realizar crunches para trabajar el recto abdominal.",
+        "grupoMuscular": "Abdominales"
+    },
+    {
+        "nombre": "Mountain climbers",
+        "descripcion": "En posición de plancha alta, llevar las rodillas al pecho alternadamente a alta velocidad para activar el core.",
+        "grupoMuscular": "Abdominales"
+    },
+    {
+        "nombre": "Bicicleta abdominal",
+        "descripcion": "Acostado boca arriba, simular pedaleo mientras llevas codos a rodillas opuestas para trabajar rectos y oblicuos.",
+        "grupoMuscular": "Abdominales"
+    },
+    {
+        "nombre": "Elevaciones de piernas tumbado en suelo",
+        "descripcion": "Acostado boca arriba en el suelo, elevar las piernas rectas hasta formar un ángulo de 90 grados para trabajar los abdominales inferiores.",
+        "grupoMuscular": "Abdominales"
+    },
+    {
+        "nombre": "Elevaciones de piernas tumbado en banco",
+        "descripcion": "Acostado boca arriba en un banco plano, elevar las piernas rectas hasta la vertical, enfocándose en los abdominales inferiores.",
+        "grupoMuscular": "Abdominales"
+    },
+    {
+        "nombre": "Elevaciones de piernas tumbado con peso",
+        "descripcion": "Acostado boca arriba, sostener un peso (mancuerna o balón medicinal) entre los pies y elevar las piernas rectas.",
+        "grupoMuscular": "Abdominales"
+    },
+    {
+        "nombre": "Elevaciones de piernas tumbado con rodillas dobladas",
+        "descripcion": "Acostado boca arriba, elevar las piernas con las rodillas dobladas hacia el pecho para trabajar los abdominales inferiores.",
+        "grupoMuscular": "Abdominales"
+    },
+    {
+        "nombre": "Elevaciones alternas de piernas tumbado",
+        "descripcion": "Acostado boca arriba, elevar una pierna a la vez hasta la vertical mientras la otra permanece cerca del suelo.",
+        "grupoMuscular": "Abdominales"
     }
+    
 ]
