@@ -11,10 +11,12 @@ class Ejercicio {
     var nombre: String
     var descripcion: String?
     var grupoMuscular: String?
-
-    init(nombre: String, descripcion: String? = nil, grupoMuscular: String? = nil) {
+    var esFavorito: Bool? // Cambiado a opcional
+    
+    init(nombre: String, descripcion: String? = nil, grupoMuscular: String? = nil, esFavorito: Bool? = nil) {
         self.nombre = nombre
         self.descripcion = descripcion
         self.grupoMuscular = grupoMuscular
+        self.esFavorito = esFavorito
     }
 }

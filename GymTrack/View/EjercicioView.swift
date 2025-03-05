@@ -37,6 +37,16 @@ struct EjercicioView: View {
                         .font(.headline)
                 }
                 Spacer()
+                // Botón para marcar/desmarcar como favorito
+                Button(action: {
+                    withAnimation(.easeInOut(duration: 0.2)) {
+                        ejercicio.esFavorito = !(ejercicio.esFavorito ?? false)
+                    }
+                }) {
+                    Image(systemName: (ejercicio.esFavorito ?? false) ? "star.fill" : "star")
+                        .foregroundColor((ejercicio.esFavorito ?? false) ? .yellow : .gray)
+                        .scaleEffect((ejercicio.esFavorito ?? false) ? 1.2 : 1.0)
+                }
             }
             HStack {
                 if let descripcion = ejercicio.descripcion {
@@ -110,7 +120,8 @@ struct EjercicioView: View {
         let demoEjercicio = Ejercicio(
             nombre: "Press de Banca",
             descripcion: "Ejercicio para trabajar el pectoral mayor",
-            grupoMuscular: "Pecho"
+            grupoMuscular: "Pecho",
+            esFavorito: false // Inicializamos como no favorito
         )
         context.insert(demoEjercicio)
         

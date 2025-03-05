@@ -178,5 +178,40 @@
         "nombre": "Remo en máquina Hammer Strength",
         "descripcion": "Máquina de placas, permite trabajo unilateral o bilateral.",
         "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Jalón al pecho agarre ancho",
+        "descripcion": "Realizar en polea alta con barra ancha, bajar hasta el pecho enfocándose en los dorsales.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Jalón al pecho agarre estrecho",
+        "descripcion": "Usar un agarre en V en polea alta, llevar la barra al pecho para activar dorsales y bíceps.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Jalón tras nuca agarre ancho",
+        "descripcion": "En polea alta, bajar la barra detrás de la cabeza con agarre ancho, trabajar dorsales externos.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Jalón al pecho agarre supino",
+        "descripcion": "Agarre con palmas hacia arriba en polea alta, bajar al pecho con mayor énfasis en bíceps y dorsales.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Jalón unilateral en polea alta",
+        "descripcion": "Usar un agarre individual en polea alta, bajar con un brazo para trabajar dorsales de forma unilateral.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Jalón al pecho con cuerda",
+        "descripcion": "Sustituir la barra por cuerdas en polea alta, separar las manos al bajar para activar dorsales externos.",
+        "grupoMuscular": "Dorsal"
+    },
+    {
+        "nombre": "Jalón en máquina de dorsales",
+        "descripcion": "Similar al jalón en polea, usar una máquina específica con barra o agarres ajustables.",
+        "grupoMuscular": "Dorsal"
     }
 ]
