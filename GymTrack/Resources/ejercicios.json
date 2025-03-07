@@ -418,6 +418,40 @@
         "nombre": "Elevaciones alternas de piernas tumbado",
         "descripcion": "Acostado boca arriba, elevar una pierna a la vez hasta la vertical mientras la otra permanece cerca del suelo.",
         "grupoMuscular": "Abdominales"
-    }
-    
+    },
+    {
+        "nombre": "Curl de piernas acostado",
+        "descripcion": "Ejercicio en máquina donde se flexionan las piernas contra una resistencia mientras se está acostado boca abajo.",
+        "grupoMuscular": "Femoral"
+    },
+    {
+        "nombre": "Curl de piernas sentado",
+        "descripcion": "Ejercicio en máquina donde se flexionan las piernas contra una resistencia mientras se está sentado.",
+        "grupoMuscular": "Femoral"
+    },
+    {
+        "nombre": "Peso muerto rumano con mancuernas",
+        "descripcion": "Ejercicio en el que se sujetan unas mancuernas con los brazos extendidos y se baja lentamente manteniéndolas cerca de las piernas, manteniendo la espalda recta y activando los isquiotibiales.",
+        "grupoMuscular": "Femoral"
+    },
+    {
+        "nombre": "Hip thrust",
+        "descripcion": "Ejercicio en el que se elevan las caderas con una barra sobre ellas, apoyando la espalda en un banco, activando principalmente los glúteos.",
+        "grupoMuscular": "Glúteos"
+    },
+    {
+        "nombre": "Hip thrust máquina",
+        "descripcion": "Ejercicio en el que se elevan las caderas con una barra sobre ellas, apoyando la espalda en una máquina, activando principalmente los glúteos.",
+        "grupoMuscular": "Glúteos"
+    },
+    {
+        "nombre": "Patada de glúteo en polea",
+        "descripcion": "Ejercicio en el que, con un tobillo sujeto a una polea baja, se extiende la pierna hacia atrás activando los glúteos.",
+        "grupoMuscular": "Glúteos"
+    },
+    {
+        "nombre": "Patada de glúteo en máquina",
+        "descripcion": "Ejercicio en el que se extiende la pierna hacia atrás activando los glúteos.",
+        "grupoMuscular": "Glúteos"
+    },
 ]
