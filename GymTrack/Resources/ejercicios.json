@@ -325,11 +325,6 @@
         "grupoMuscular": "Hombro"
     },
     {
-        "nombre": "Elevaciones laterales con mancuernas",
-        "descripcion": "De pie, elevar mancuernas a los lados hasta la altura de los hombros para aislar el deltoides lateral.",
-        "grupoMuscular": "Hombro"
-    },
-    {
         "nombre": "Elevaciones laterales en polea baja",
         "descripcion": "Usar una polea baja con un agarre por mano, elevar los brazos a los lados hasta la altura de los hombros.",
         "grupoMuscular": "Hombro"
@@ -454,4 +449,134 @@
         "descripcion": "Ejercicio en el que se extiende la pierna hacia atrás activando los glúteos.",
         "grupoMuscular": "Glúteos"
     },
+    {
+        "nombre": "Fondos en paralelas",
+        "descripcion": "Ejercicio en el que se baja y se sube el cuerpo sujetándose en barras paralelas, activando los tríceps.",
+        "grupoMuscular": "Tríceps"
+    },
+    {
+        "nombre": "Extensiones de tríceps en polea",
+        "descripcion": "Ejercicio en el que se extienden los brazos empujando una cuerda o barra conectada a una polea alta.",
+        "grupoMuscular": "Tríceps"
+    },
+    {
+        "nombre": "Press francés",
+        "descripcion": "Ejercicio con barra Z o mancuernas en el que se flexionan los codos llevando la carga hacia la frente y luego extendiéndolos.",
+        "grupoMuscular": "Tríceps"
+    },
+    {
+        "nombre": "Fondos en banco",
+        "descripcion": "Ejercicio en el que se colocan las manos en un banco detrás del cuerpo y se baja flexionando los codos.",
+        "grupoMuscular": "Tríceps"
+    },
+    {
+        "nombre": "Patada de tríceps con mancuernas",
+        "descripcion": "Ejercicio en el que se extienden los brazos hacia atrás con una mancuerna en cada mano, activando los tríceps.",
+        "grupoMuscular": "Tríceps"
+    },
+    {
+        "nombre": "Extensión de tríceps con mancuerna",
+        "descripcion": "Ejercicio en el que se sostiene una mancuerna con ambas manos por encima de la cabeza y se flexionan los codos para bajar la carga detrás de la cabeza.",
+        "grupoMuscular": "Tríceps"
+    },
+    {
+        "nombre": "Extensión de tríceps en polea con cuerda",
+        "descripcion": "Ejercicio similar a la extensión en polea, pero usando una cuerda para permitir un mayor rango de movimiento.",
+        "grupoMuscular": "Tríceps"
+    },
+    {
+        "nombre": "Press de banca agarre cerrado",
+        "descripcion": "Ejercicio en el que se realiza un press de banca con agarre estrecho, enfocando más el trabajo en los tríceps.",
+        "grupoMuscular": "Tríceps"
+    },
+    {
+        "nombre": "Diamante push-ups",
+        "descripcion": "Flexiones con las manos juntas en forma de diamante, enfocando la tensión en los tríceps.",
+        "grupoMuscular": "Tríceps"
+    },
+    {
+        "nombre": "Extensiones de tríceps con barra en polea",
+        "descripcion": "Ejercicio en el que se utiliza una barra conectada a una polea alta para extender los codos y trabajar los tríceps.",
+        "grupoMuscular": "Tríceps"
+    },
+    {
+        "nombre": "Curl de bíceps con barra",
+        "descripcion": "Ejercicio en el que se levanta una barra con ambas manos flexionando los codos para activar los bíceps.",
+        "grupoMuscular": "Bíceps"
+    },
+    {
+        "nombre": "Curl de bíceps con mancuernas",
+        "descripcion": "Ejercicio en el que se flexionan los codos levantando una mancuerna en cada mano, activando los bíceps.",
+        "grupoMuscular": "Bíceps"
+    },
+    {
+        "nombre": "Curl martillo",
+        "descripcion": "Variante del curl con mancuernas en la que las palmas se mantienen en posición neutral, activando el braquial y los bíceps.",
+        "grupoMuscular": "Bíceps"
+    },
+    {
+        "nombre": "Curl concentrado",
+        "descripcion": "Ejercicio en el que se apoya el codo en la pierna y se realiza un curl con una mancuerna, aislando los bíceps.",
+        "grupoMuscular": "Bíceps"
+    },
+    {
+        "nombre": "Curl de bíceps en banco inclinado",
+        "descripcion": "Ejercicio en el que se realizan curls con mancuernas estando recostado en un banco inclinado, maximizando el estiramiento del bíceps.",
+        "grupoMuscular": "Bíceps"
+    },
+    {
+        "nombre": "Curl de bíceps en polea baja",
+        "descripcion": "Ejercicio en el que se utiliza una polea baja con barra recta o cuerda para realizar un curl manteniendo la tensión constante en los bíceps.",
+        "grupoMuscular": "Bíceps"
+    },
+    {
+        "nombre": "Dominadas supinas",
+        "descripcion": "Ejercicio en el que se realiza una dominada con las palmas mirando hacia el cuerpo, activando fuertemente los bíceps.",
+        "grupoMuscular": "Bíceps"
+    },
+    {
+        "nombre": "Curl Zottman",
+        "descripcion": "Ejercicio en el que se levanta una mancuerna con agarre supino y se baja con agarre prono, trabajando bíceps y antebrazos.",
+        "grupoMuscular": "Bíceps"
+    },
+    {
+        "nombre": "Curl spider",
+        "descripcion": "Ejercicio en el que se realizan curls con mancuernas o barra estando inclinado sobre un banco, asegurando máxima contracción del bíceps.",
+        "grupoMuscular": "Bíceps"
+    },
+    {
+        "nombre": "Curl de bíceps con cuerda en polea baja",
+        "descripcion": "Ejercicio en el que se usa una cuerda en una polea baja para realizar curls con un rango de movimiento más amplio.",
+        "grupoMuscular": "Bíceps"
+    },
+    {
+        "nombre": "Curl de bíceps en poleas cruzadas",
+        "descripcion": "Ejercicio en el que se sujeta una polea en cada mano desde cables cruzados, se da un paso al frente y se realiza un curl manteniendo los codos alineados con los hombros.",
+        "grupoMuscular": "Bíceps"
+    },
+    {
+        "nombre": "Pájaros con mancuernas",
+        "descripcion": "Ejercicio en el que se inclina el torso hacia adelante y se levantan las mancuernas hacia los lados, activando el deltoides posterior.",
+        "grupoMuscular": "Hombro"
+    },
+    {
+        "nombre": "Remo al cuello con cuerda",
+        "descripcion": "Ejercicio en el que se usa una polea con cuerda y se tira hacia la parte superior del pecho con los codos elevados, activando el deltoides posterior.",
+        "grupoMuscular": "Hombro"
+    },
+    {
+        "nombre": "Cruces inversos en polea",
+        "descripcion": "Ejercicio en el que se usan poleas cruzadas para realizar un movimiento de apertura inversa, activando el deltoides posterior.",
+        "grupoMuscular": "Hombro"
+    },
+    {
+        "nombre": "Press Arnold invertido",
+        "descripcion": "Variante del press Arnold en la que se rota el agarre para enfatizar más la parte posterior del hombro.",
+        "grupoMuscular": "Hombro"
+    },
+    {
+        "nombre": "Elevación frontal con disco",
+        "descripcion": "Ejercicio en el que se sujeta un disco con ambas manos y se eleva frontalmente con los brazos extendidos hasta la altura de los hombros.",
+        "grupoMuscular": "Hombro"
+    }
 ]

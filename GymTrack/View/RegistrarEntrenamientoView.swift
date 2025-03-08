@@ -24,11 +24,11 @@ struct RegistrarEntrenamientoView: View {
                 TextField("Peso", text: $peso)
                     .keyboardType(.decimalPad)
                 Button("Añadir Serie") {
+                    let pesoConPunto = peso.replacingOccurrences(of: ",", with: ".")
                     if let reps = Int(repeticiones),
-                       let kg = Double(peso) {
+                       let kg = Double(pesoConPunto) {
                         let nuevaSerie = Serie(repeticiones: reps, peso: kg, fecha: Date())
                         series.append(nuevaSerie)
-                        // Limpiar campos
                         repeticiones = ""
                         peso = ""
                     }

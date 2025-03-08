@@ -34,29 +34,42 @@ struct MiApp: App {
 // Función para cargar datos del JSON a SwiftData
 func cargarDatosIniciales(context: ModelContext) {
     do {
-        // Obtener la URL del archivo ejercicios.json
         guard let url = Bundle.main.url(forResource: "ejercicios", withExtension: "json") else {
             print("No se encontró el archivo ejercicios.json")
             return
         }
 
-        // Leer y decodificar el JSON
         let data = try Data(contentsOf: url)
         let decoder = JSONDecoder()
         let ejerciciosJSON = try decoder.decode([EjercicioJSON].self, from: data)
 
         // Obtener los ejercicios existentes en SwiftData
         let ejerciciosExistentes = try context.fetch(FetchDescriptor<Ejercicio>())
-        
-        // Crear un diccionario para acceso rápido a los ejercicios existentes por nombre
-        let ejerciciosPorNombre: [String: Ejercicio] = Dictionary(uniqueKeysWithValues: ejerciciosExistentes.map { ($0.nombre, $0) })
 
-        // Iterar sobre los ejercicios del JSON
+        // Crear un diccionario seguro sin duplicados de los ejercicios existentes
+        var ejerciciosPorNombre = [String: Ejercicio]()
+        for ejercicio in ejerciciosExistentes {
+            if ejerciciosPorNombre[ejercicio.nombre] == nil {
+                ejerciciosPorNombre[ejercicio.nombre] = ejercicio
+            } else {
+                print("⚠️ Advertencia: Duplicado en SwiftData ignorado -> \(ejercicio.nombre)")
+            }
+        }
+
+        // Conjunto para detectar duplicados dentro del JSON
+        var nombresVistos = Set<String>()
+
         for ejercicioJSON in ejerciciosJSON {
+            if nombresVistos.contains(ejercicioJSON.nombre) {
+                print("⚠️ Advertencia: Nombre duplicado en JSON ignorado -> \(ejercicioJSON.nombre)")
+                continue // Saltar este ejercicio
+            }
+            nombresVistos.insert(ejercicioJSON.nombre)
+
             if let ejercicioExistente = ejerciciosPorNombre[ejercicioJSON.nombre] {
-                // Si el ejercicio ya existe, verificar si necesita actualización
+                // Verificar si necesita actualización
                 var necesitaActualizacion = false
-                
+
                 if ejercicioExistente.descripcion != ejercicioJSON.descripcion {
                     ejercicioExistente.descripcion = ejercicioJSON.descripcion
                     necesitaActualizacion = true
@@ -65,25 +78,23 @@ func cargarDatosIniciales(context: ModelContext) {
                     ejercicioExistente.grupoMuscular = ejercicioJSON.grupoMuscular
                     necesitaActualizacion = true
                 }
-                
-                // Si hubo cambios, SwiftData detectará la modificación automáticamente
+
                 if necesitaActualizacion {
-                    print("Actualizado ejercicio: \(ejercicioJSON.nombre)")
+                    print("✅ Actualizado ejercicio: \(ejercicioJSON.nombre)")
                 }
             } else {
-                // Si no existe, crear un nuevo ejercicio
+                // Insertar nuevo ejercicio si no existe
                 let nuevoEjercicio = Ejercicio(
                     nombre: ejercicioJSON.nombre,
                     descripcion: ejercicioJSON.descripcion,
                     grupoMuscular: ejercicioJSON.grupoMuscular
                 )
                 context.insert(nuevoEjercicio)
-                print("Añadido nuevo ejercicio: \(ejercicioJSON.nombre)")
+                print("➕ Añadido nuevo ejercicio: \(ejercicioJSON.nombre)")
             }
         }
-        
-        // Nota: No es necesario context.save() porque SwiftData guarda automáticamente los cambios
+
     } catch {
-        print("Error al cargar datos del JSON: \(error)")
+        print("❌ Error al cargar datos del JSON: \(error)")
     }
 }
