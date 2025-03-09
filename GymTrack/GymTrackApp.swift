@@ -14,7 +14,7 @@ struct MiApp: App {
     init() {
         do {
             // Configurar el contenedor para el modelo Ejercicio
-            container = try ModelContainer(for: Ejercicio.self, EjercicioEntrenamiento.self, Serie.self)
+            container = try ModelContainer(for: Ejercicio.self, EjercicioEntrenamiento.self, Serie.self, EjercicioProgramado.self, EntrenamientoProgramado.self, SeriePlanificada.self)
             let context = container.mainContext
             // Cargar datos iniciales si no hay ejercicios guardados
             cargarDatosIniciales(context: context)

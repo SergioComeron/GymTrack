@@ -18,10 +18,23 @@ struct ContentView: View {
                     Image(systemName: "house")
                     Text("Home")
                 }
+            
             EjerciciosList()
                 .tabItem {
                     Image(systemName: "list.bullet")
                     Text("Ejercicios")
+                }
+            
+            ProgramarEntrenamientoView()
+                .tabItem {
+                    Image(systemName: "plus.circle.fill")
+                    Text("Crear Entrenamiento")
+                }
+            
+            SeleccionarEntrenamientoProgramadoView()
+                .tabItem {
+                    Image(systemName: "play.circle.fill")
+                    Text("Realizar Entrenamiento")
                 }
         }
     }
