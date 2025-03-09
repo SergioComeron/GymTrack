@@ -12,6 +12,7 @@ struct ProgramarEntrenamientoView: View {
     @State private var nombreEntrenamiento: String = ""
     @State private var ejerciciosSeleccionados: [EjercicioProgramado] = []
     @State private var mostrarSelectorEjercicios: Bool = false
+    @State private var estadoInicial: (String, [EjercicioProgramado]) = ("", [])
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
     @Query private var ejercicios: [Ejercicio]
@@ -67,6 +68,16 @@ struct ProgramarEntrenamientoView: View {
                 }
                 .disabled(nombreEntrenamiento.isEmpty || ejerciciosSeleccionados.isEmpty)
             }
+            
+            Section {
+                Button("Cancelar", role: .destructive) {
+                    (nombreEntrenamiento, ejerciciosSeleccionados) = estadoInicial
+                    dismiss()
+                }
+            }
+        }
+        .onAppear {
+            estadoInicial = (nombreEntrenamiento, ejerciciosSeleccionados)
         }
         .sheet(isPresented: $mostrarSelectorEjercicios) {
             SelectorEjercicioView { ejercicio in
