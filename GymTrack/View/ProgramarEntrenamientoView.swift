@@ -38,7 +38,8 @@ struct ProgramarEntrenamientoView: View {
                             }
                         }
                         Button("Añadir Serie") {
-                            ejerciciosSeleccionados[index].seriesPlanificadas.append(SeriePlanificada(repeticiones: 10))
+                            let nuevaSerie = SeriePlanificada(repeticiones: 10, orden: ejerciciosSeleccionados[index].seriesPlanificadas.count + 1)
+                            ejerciciosSeleccionados[index].seriesPlanificadas.append(nuevaSerie)
                         }
                         .font(.caption)
                         .foregroundColor(.blue)
@@ -72,7 +73,7 @@ struct ProgramarEntrenamientoView: View {
                 let nuevoEjercicioProgramado = EjercicioProgramado(
                     ejercicio: ejercicio,
                     orden: ejerciciosSeleccionados.count + 1,
-                    seriesPlanificadas: [SeriePlanificada(repeticiones: 10)]
+                    seriesPlanificadas: [SeriePlanificada(repeticiones: 10, orden: 1)]
                 )
                 ejerciciosSeleccionados.append(nuevoEjercicioProgramado)
             }

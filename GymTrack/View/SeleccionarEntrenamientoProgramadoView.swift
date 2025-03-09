@@ -35,13 +35,13 @@ struct SeleccionarEntrenamientoProgramadoView: View {
                 }
             }
             .navigationTitle("Entrenamientos Programados")
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button("Cerrar") {
-                        dismiss()
-                    }
-                }
-            }
+//            .toolbar {
+//                ToolbarItem(placement: .cancellationAction) {
+//                    Button("Cerrar") {
+//                        dismiss()
+//                    }
+//                }
+//            }
         }
     }
     
