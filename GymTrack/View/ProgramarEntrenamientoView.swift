@@ -28,22 +28,37 @@ struct ProgramarEntrenamientoView: View {
                     VStack(alignment: .leading) {
                         Text(ejerciciosSeleccionados[index].ejercicio.nombre)
                             .font(.headline)
+                        
                         ForEach(ejerciciosSeleccionados[index].seriesPlanificadas.indices, id: \.self) { serieIndex in
                             HStack {
                                 TextField("Reps", value: $ejerciciosSeleccionados[index].seriesPlanificadas[serieIndex].repeticiones, format: .number)
                                     .keyboardType(.numberPad)
                                     .frame(width: 50)
+                                
                                 TextField("Kg", value: $ejerciciosSeleccionados[index].seriesPlanificadas[serieIndex].pesoEstimado, format: .number)
                                     .keyboardType(.decimalPad)
                                     .frame(width: 70)
+
+                                Spacer()
+
+                                Button(action: {
+                                    ejerciciosSeleccionados[index].seriesPlanificadas.remove(at: serieIndex)
+                                }) {
+                                    Image(systemName: "minus.circle.fill")
+                                        .foregroundColor(.red)
+                                }
+
+                                if serieIndex == ejerciciosSeleccionados[index].seriesPlanificadas.count - 1 {
+                                    Button(action: {
+                                        let nuevaSerie = SeriePlanificada(repeticiones: 10, orden: ejerciciosSeleccionados[index].seriesPlanificadas.count + 1)
+                                        ejerciciosSeleccionados[index].seriesPlanificadas.append(nuevaSerie)
+                                    }) {
+                                        Image(systemName: "plus.circle.fill")
+                                            .foregroundColor(.blue)
+                                    }
+                                }
                             }
                         }
-                        Button("Añadir Serie") {
-                            let nuevaSerie = SeriePlanificada(repeticiones: 10, orden: ejerciciosSeleccionados[index].seriesPlanificadas.count + 1)
-                            ejerciciosSeleccionados[index].seriesPlanificadas.append(nuevaSerie)
-                        }
-                        .font(.caption)
-                        .foregroundColor(.blue)
                     }
                 }
                 
@@ -64,7 +79,10 @@ struct ProgramarEntrenamientoView: View {
                     } catch {
                         print("Error al guardar: \(error)")
                     }
-                    dismiss()
+                    // Reiniciar la vista después de guardar
+                    nombreEntrenamiento = ""
+                    ejerciciosSeleccionados = []
+                    estadoInicial = ("", [])
                 }
                 .disabled(nombreEntrenamiento.isEmpty || ejerciciosSeleccionados.isEmpty)
             }
