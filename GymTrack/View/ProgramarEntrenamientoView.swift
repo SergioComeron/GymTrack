@@ -41,17 +41,13 @@ struct ProgramarEntrenamientoView: View {
 
                                 Spacer()
 
-                                Button(action: {
-                                    ejerciciosSeleccionados[index].seriesPlanificadas.remove(at: serieIndex)
-                                }) {
-                                    Image(systemName: "minus.circle.fill")
-                                        .foregroundColor(.red)
-                                }
-
                                 if serieIndex == ejerciciosSeleccionados[index].seriesPlanificadas.count - 1 {
                                     Button(action: {
-                                        let nuevaSerie = SeriePlanificada(repeticiones: 10, orden: ejerciciosSeleccionados[index].seriesPlanificadas.count + 1)
-                                        ejerciciosSeleccionados[index].seriesPlanificadas.append(nuevaSerie)
+                                        let ejercicio = ejerciciosSeleccionados[index]
+                                        let nuevaSerie = SeriePlanificada(repeticiones: 10, orden: ejercicio.seriesPlanificadas.count + 1)
+                                        ejercicio.seriesPlanificadas.append(nuevaSerie)
+                                        ejerciciosSeleccionados[index] = ejercicio
+                                        print("Añadir")
                                     }) {
                                         Image(systemName: "plus.circle.fill")
                                             .foregroundColor(.blue)
