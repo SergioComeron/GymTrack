@@ -47,26 +47,28 @@ func cargarDatosIniciales(context: ModelContext) {
         let ejerciciosExistentes = try context.fetch(FetchDescriptor<Ejercicio>())
 
         // Crear un diccionario seguro sin duplicados de los ejercicios existentes
-        var ejerciciosPorNombre = [String: Ejercicio]()
+        var ejerciciosPorClave = [String: Ejercicio]()
         for ejercicio in ejerciciosExistentes {
-            if ejerciciosPorNombre[ejercicio.nombre] == nil {
-                ejerciciosPorNombre[ejercicio.nombre] = ejercicio
+            let clave = "\(ejercicio.nombre.lowercased())_\(ejercicio.grupoMuscular?.lowercased() ?? "")"
+            if ejerciciosPorClave[clave] == nil {
+                ejerciciosPorClave[clave] = ejercicio
             } else {
-                print("⚠️ Advertencia: Duplicado en SwiftData ignorado -> \(ejercicio.nombre)")
+                print("⚠️ Advertencia: Duplicado en SwiftData ignorado -> \(ejercicio.nombre) (\(ejercicio.grupoMuscular ?? "Sin grupo"))")
             }
         }
 
         // Conjunto para detectar duplicados dentro del JSON
-        var nombresVistos = Set<String>()
+        var clavesVistas = Set<String>()
 
         for ejercicioJSON in ejerciciosJSON {
-            if nombresVistos.contains(ejercicioJSON.nombre) {
-                print("⚠️ Advertencia: Nombre duplicado en JSON ignorado -> \(ejercicioJSON.nombre)")
+            let clave = "\(ejercicioJSON.nombre.lowercased())_\(ejercicioJSON.grupoMuscular.lowercased())"
+            if clavesVistas.contains(clave) {
+                print("⚠️ Advertencia: Duplicado en JSON ignorado -> \(ejercicioJSON.nombre) (\(ejercicioJSON.grupoMuscular))")
                 continue // Saltar este ejercicio
             }
-            nombresVistos.insert(ejercicioJSON.nombre)
+            clavesVistas.insert(clave)
 
-            if let ejercicioExistente = ejerciciosPorNombre[ejercicioJSON.nombre] {
+            if let ejercicioExistente = ejerciciosPorClave[clave] {
                 // Verificar si necesita actualización
                 var necesitaActualizacion = false
 
@@ -74,23 +76,31 @@ func cargarDatosIniciales(context: ModelContext) {
                     ejercicioExistente.descripcion = ejercicioJSON.descripcion
                     necesitaActualizacion = true
                 }
-                if ejercicioExistente.grupoMuscular != ejercicioJSON.grupoMuscular {
+                if ejercicioExistente.grupoMuscular ?? "" != ejercicioJSON.grupoMuscular {
                     ejercicioExistente.grupoMuscular = ejercicioJSON.grupoMuscular
+                    necesitaActualizacion = true
+                }
+                
+                let nombreImagenEsperado = "\(ejercicioJSON.nombre.lowercased())_\(ejercicioJSON.grupoMuscular.lowercased())"
+                if ejercicioExistente.imagenNombre == nil || ejercicioExistente.imagenNombre?.isEmpty == true {
+                    ejercicioExistente.imagenNombre = nombreImagenEsperado
                     necesitaActualizacion = true
                 }
 
                 if necesitaActualizacion {
-                    print("✅ Actualizado ejercicio: \(ejercicioJSON.nombre)")
+                    print("✅ Actualizado ejercicio: \(ejercicioJSON.nombre) (\(ejercicioJSON.grupoMuscular))")
                 }
             } else {
                 // Insertar nuevo ejercicio si no existe
+                let nombreImagen = "\(ejercicioJSON.nombre.lowercased())_\(ejercicioJSON.grupoMuscular.lowercased())"
                 let nuevoEjercicio = Ejercicio(
                     nombre: ejercicioJSON.nombre,
                     descripcion: ejercicioJSON.descripcion,
-                    grupoMuscular: ejercicioJSON.grupoMuscular
+                    grupoMuscular: ejercicioJSON.grupoMuscular,
+                    imagenNombre: nombreImagen
                 )
                 context.insert(nuevoEjercicio)
-                print("➕ Añadido nuevo ejercicio: \(ejercicioJSON.nombre)")
+                print("➕ Añadido nuevo ejercicio: \(ejercicioJSON.nombre) (\(ejercicioJSON.grupoMuscular))")
             }
         }
 

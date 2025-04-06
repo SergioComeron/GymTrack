@@ -30,6 +30,40 @@ struct EjercicioView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
+            // Mostrar imagen del ejercicio o recuadro con icono si no está disponible
+            if let imagenNombre = ejercicio.imagenNombre, !imagenNombre.isEmpty, let uiImage = UIImage(named: imagenNombre) {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(Color.clear)
+                        .frame(maxWidth: .infinity, maxHeight: 200)
+                    Image(uiImage: uiImage)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(maxHeight: 200)
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                }
+            } else {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(Color.gray.opacity(0.2))
+                        .frame(maxWidth: .infinity, maxHeight: 200)
+                    VStack {
+                        Image(systemName: "photo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 40, height: 40)
+                            .foregroundColor(.gray)
+                        Text("\(ejercicio.imagenNombre ?? "no definido")")
+                            .foregroundColor(.gray)
+                            .font(.caption)
+                        Text("Nombre esperado: \(ejercicio.nombre.lowercased())_\(ejercicio.grupoMuscular?.lowercased() ?? "")")
+                            .foregroundColor(.gray)
+                            .font(.caption2)
+                            .multilineTextAlignment(.center)
+                    }
+                }
+            }
+            
             // Datos del ejercicio
             HStack {
                 if let grupoMuscular = ejercicio.grupoMuscular {
@@ -121,7 +155,8 @@ struct EjercicioView: View {
             nombre: "Press de Banca",
             descripcion: "Ejercicio para trabajar el pectoral mayor",
             grupoMuscular: "Pecho",
-            esFavorito: false // Inicializamos como no favorito
+            esFavorito: false, // Inicializamos como no favorito
+            imagenNombre: nil // Inicializamos sin imagen
         )
         context.insert(demoEjercicio)
         

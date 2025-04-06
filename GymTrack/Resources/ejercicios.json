@@ -5,6 +5,101 @@
         "grupoMuscular": "Pecho",
     },
     {
+        "nombre": "Press de banca con barra",
+        "descripcion": "Ejercicio compuesto que trabaja principalmente el pectoral mayor, tríceps y deltoides anterior. Se realiza acostado en un banco plano levantando una barra con peso.",
+        "grupoMuscular": "Pecho"
+    },
+    {
+        "nombre": "Press de banca con mancuernas",
+        "descripcion": "Variante del press de banca que permite un mayor rango de movimiento y una mayor activación del pectoral.",
+        "grupoMuscular": "Pecho"
+    },
+    {
+        "nombre": "Press inclinado con barra",
+        "descripcion": "Ejercicio dirigido a la parte superior del pectoral mayor, realizado en un banco inclinado con una barra.",
+        "grupoMuscular": "Pecho"
+    },
+    {
+        "nombre": "Press inclinado con mancuernas",
+        "descripcion": "Similar al press inclinado con barra, pero usando mancuernas para mejorar la estabilidad y activar más fibras musculares.",
+        "grupoMuscular": "Pecho"
+    },
+    {
+        "nombre": "Press declinado con barra",
+        "descripcion": "Ejercicio que enfatiza la parte inferior del pectoral mayor, realizado en un banco declinado.",
+        "grupoMuscular": "Pecho"
+    },
+    {
+        "nombre": "Press declinado con mancuernas",
+        "descripcion": "Variante del press declinado con barra que permite un rango de movimiento más amplio y un mayor control del peso.",
+        "grupoMuscular": "Pecho"
+    },
+    {
+        "nombre": "Aperturas con mancuernas",
+        "descripcion": "Ejercicio de aislamiento para el pectoral que se realiza acostado en un banco, extendiendo los brazos lateralmente con mancuernas.",
+        "grupoMuscular": "Pecho"
+    },
+    {
+        "nombre": "Fondos en paralelas",
+        "descripcion": "Ejercicio que trabaja el pectoral mayor, tríceps y deltoides anterior. Se realiza en barras paralelas bajando y subiendo el cuerpo con los brazos.",
+        "grupoMuscular": "Pecho"
+    },
+    {
+        "nombre": "Flexiones",
+        "descripcion": "Ejercicio de peso corporal que trabaja el pectoral, tríceps y deltoides anterior. Se realiza bajando y subiendo el cuerpo con los brazos desde el suelo.",
+        "grupoMuscular": "Pecho"
+    },
+    {
+        "nombre": "Crossover en poleas",
+        "descripcion": "Ejercicio de aislamiento para el pectoral que se realiza en máquina de poleas cruzando los brazos frente al pecho.",
+        "grupoMuscular": "Pecho"
+    },
+    {
+        "nombre": "Press de banca en máquina Smith",
+        "descripcion": "Ejercicio similar al press de banca con barra, pero con una trayectoria fija en la máquina Smith, lo que proporciona mayor estabilidad.",
+        "grupoMuscular": "Pecho"
+    },
+    {
+        "nombre": "Pull over con mancuerna",
+        "descripcion": "Ejercicio que trabaja el pectoral y el dorsal ancho, se realiza acostado en un banco sujetando una mancuerna con ambas manos y llevándola por detrás de la cabeza.",
+        "grupoMuscular": "Pecho"
+    },
+    {
+        "nombre": "Máquina contractora (Pec Deck)",
+        "descripcion": "Ejercicio de aislamiento para el pectoral mayor. Se realiza sentado en la máquina pec deck, juntando los brazos al frente del pecho.",
+        "grupoMuscular": "Pecho"
+    },
+    {
+        "nombre": "Press en máquina Hammer Strength",
+        "descripcion": "Ejercicio guiado en máquina que simula el press de banca con barra pero con mayor control y seguridad.",
+        "grupoMuscular": "Pecho"
+    },
+    {
+        "nombre": "Press inclinado en máquina Hammer Strength",
+        "descripcion": "Variante del press en máquina Hammer que enfatiza la parte superior del pectoral.",
+        "grupoMuscular": "Pecho"
+    },
+    {
+        "nombre": "Press declinado en máquina Hammer Strength",
+        "descripcion": "Variante del press en máquina Hammer que enfoca la parte inferior del pectoral.",
+        "grupoMuscular": "Pecho"
+    },
+    {
+        "nombre": "Aperturas en máquina contractora",
+        "descripcion": "Ejercicio similar a las aperturas con mancuernas pero guiado en máquina, lo que permite un mejor control del movimiento.",
+        "grupoMuscular": "Pecho"
+    },
+    {
+        "nombre": "Flexiones en máquina asistida",
+        "descripcion": "Ejercicio de flexiones con asistencia de una máquina que permite regular la dificultad del movimiento.",
+        "grupoMuscular": "Pecho"
+    },
+    {
+        "nombre": "Press horizontal en máquina",
+        "descripcion": "Press de pecho realizado en una máquina con un ángulo horizontal, ideal para entrenar el pectoral mayor con control.",
+        "grupoMuscular": "Pecho"
+    },
+    {
         "nombre": "Sentadilla Multipower",
         "descripcion": "Ejercicio fundamental que trabaja los cuádriceps, glúteos y isquiotibiales. Se realiza flexionando las rodillas y bajando el cuerpo como si te sentaras en una silla imaginaria.",
         "grupoMuscular": "Cuádriceps"

@@ -12,11 +12,13 @@ class Ejercicio {
     var descripcion: String?
     var grupoMuscular: String?
     var esFavorito: Bool? // Cambiado a opcional
+    var imagenNombre: String? // Nueva propiedad opcional
     
-    init(nombre: String, descripcion: String? = nil, grupoMuscular: String? = nil, esFavorito: Bool? = nil) {
+    init(nombre: String, descripcion: String? = nil, grupoMuscular: String? = nil, esFavorito: Bool? = nil, imagenNombre: String? = nil) {
         self.nombre = nombre
         self.descripcion = descripcion
         self.grupoMuscular = grupoMuscular
         self.esFavorito = esFavorito
+        self.imagenNombre = imagenNombre
     }
 }
