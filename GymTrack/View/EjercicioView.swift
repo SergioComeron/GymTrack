@@ -7,10 +7,12 @@
 
 import SwiftUI
 import SwiftData
+import Charts
 
 struct EjercicioView: View {
     let ejercicio: Ejercicio // Recibe el ejercicio seleccionado
     @State private var mostrarSheet: Bool = false
+    @State private var entrenamientoSeleccionado: EjercicioEntrenamiento?
     @Query private var entrenamientos: [EjercicioEntrenamiento]
     
     // Formateador de fecha con hora, minutos y segundos
@@ -96,28 +98,34 @@ struct EjercicioView: View {
                 .padding(.top)
             
             if !entrenamientosDelEjercicio.isEmpty {
-                List {
-                    ForEach(entrenamientosDelEjercicio) { entrenamiento in
-                        Section(header: Text(dateFormatter.string(from: entrenamiento.fecha))) {
-                            ForEach(entrenamiento.series.sorted { ($0.fecha ?? Date.distantPast) < ($1.fecha ?? Date.distantPast) }) { serie in
-                                VStack(alignment: .leading, spacing: 4) {
-                                    if let fecha = serie.fecha {
-                                        Text("Fecha: \(dateFormatter.string(from: fecha))")
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 12) {
+                        ForEach(entrenamientosDelEjercicio) { entrenamiento in
+                            Button(action: {
+                                entrenamientoSeleccionado = entrenamiento
+                            }) {
+                                HStack {
+                                    VStack(alignment: .leading) {
+                                        Text(dateFormatter.string(from: entrenamiento.fecha))
+                                            .font(.headline)
+                                            .foregroundColor(.primary)
+                                        Text("\(entrenamiento.series.count) series")
                                             .font(.subheadline)
-                                            .foregroundColor(.gray)
-                                    } else {
-                                        Text("Fecha: No disponible")
-                                            .font(.subheadline)
-                                            .foregroundColor(.gray)
+                                            .foregroundColor(.secondary)
                                     }
-                                    Text("\(serie.repeticiones) repeticiones - \(serie.peso, specifier: "%.2f") kg")
-                                        .font(.body)
+                                    Spacer()
+                                    Image(systemName: "chevron.right")
+                                        .foregroundColor(.gray)
                                 }
+                                .padding()
+                                .background(Color.white)
+                                .cornerRadius(12)
+                                .shadow(color: .black.opacity(0.05), radius: 4, x: 0, y: 2)
                             }
                         }
                     }
+                    .padding(.horizontal)
                 }
-                .listStyle(.insetGrouped)
             } else {
                 Text("No hay entrenamientos registrados para este ejercicio.")
                     .foregroundStyle(.secondary)
@@ -138,6 +146,62 @@ struct EjercicioView: View {
         .sheet(isPresented: $mostrarSheet) {
             NavigationStack {
                 RegistrarEntrenamientoView(ejercicio: ejercicio)
+            }
+        }
+        .sheet(item: $entrenamientoSeleccionado) { entrenamiento in
+            ScrollView {
+                VStack(alignment: .leading, spacing: 16) {
+                    Text("Entrenamiento del \(dateFormatter.string(from: entrenamiento.fecha))")
+                        .font(.title2)
+                        .padding(.bottom)
+
+                    if #available(iOS 16.0, *) {
+                        Chart {
+                            ForEach(entrenamiento.series.sorted { ($0.fecha ?? Date.distantPast) < ($1.fecha ?? Date.distantPast) }) { serie in
+                                if let fecha = serie.fecha {
+                                    BarMark(
+                                        x: .value("Fecha", fecha),
+                                        y: .value("Peso", serie.peso)
+                                    )
+                                    .foregroundStyle(.orange)
+                                }
+                            }
+                        }
+                        .frame(height: 150)
+                    }
+
+                    ForEach(entrenamiento.series.sorted { ($0.fecha ?? Date.distantPast) < ($1.fecha ?? Date.distantPast) }) { serie in
+                        VStack(alignment: .leading, spacing: 4) {
+                            HStack {
+                                Image(systemName: "dumbbell.fill")
+                                    .foregroundColor(.blue)
+                                Text("\(serie.repeticiones) repeticiones")
+                                    .font(.body)
+                            }
+                            HStack {
+                                Image(systemName: "scalemass")
+                                    .foregroundColor(.orange)
+                                Text("\(serie.peso, specifier: "%.2f") kg")
+                                    .font(.body)
+                            }
+                            if let fecha = serie.fecha {
+                                Text(dateFormatter.string(from: fecha))
+                                    .font(.caption)
+                                    .foregroundColor(.gray)
+                            } else {
+                                Text("Fecha no disponible")
+                                    .font(.caption)
+                                    .foregroundColor(.gray)
+                            }
+                        }
+                        .padding()
+                        .background(Color.gray.opacity(0.1))
+                        .cornerRadius(8)
+                    }
+
+                    Spacer()
+                }
+                .padding()
             }
         }
     }
